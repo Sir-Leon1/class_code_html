@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Basic calc</title>
+</head>
+
+<body>
+	
+	Enter num1: <textarea id="num1" row="0" col="50"></textarea><br/><br>
+	Enter num2:<textarea id="num2" row="0" col="50"></textarea>
+	
+	<script type="text/javascript">
+		
+		//var a = prompt("Enter the first number");
+		//var operand = prompt("Enter an operand either +, -, /, or *");
+		//var b = prompt("Enter the second number");
+		
+		switch (operand) {
+			case "+":
+				var result = parseInt(a) + parseInt(b);
+				break;
+				
+			case "-":
+				var result = parseInt(a) - parseInt(b);
+				break;
+				
+			case "/":
+				
+				if (b == "0"){
+					result = "Cannot Divide by 0";
+					break;
+				}
+				var result = parseInt(a) / parseInt(b);
+				break;
+				
+			case "*":
+				var result = parseInt(a) * parseInt(b);
+				break;
+				
+			default:
+				result = "Wrong operand"
+		}
+		
+		document.write(result);
+	</script>
+</body>
+</html>
